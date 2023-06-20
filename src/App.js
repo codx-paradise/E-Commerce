@@ -1,11 +1,9 @@
-import './App.css';
-import contact from './contact';
+import Header from './components/Header';
 
 function App() {
   return (
     <>
-    <h2>hello world</h2>
-    <contact/>
+    <Header/>
     </>
   );
 }

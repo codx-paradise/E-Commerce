@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 5rem;
+}
+#header .search input{
+    padding: 0.7rem 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background-color: rgb(18, 18, 18);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#header .search span{
+    position: absolute;
+    right: 21.5%;
+    top: 3%;
+}
+#header .logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem !important;
+}
+#header .menu{
+    cursor: pointer;
+}
+.menu-bar{
+    border: 1.5px solid lightgray;
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+    margin: 1rem 0 0 1rem;
+    padding: 2rem;
+    display: none;
+}
+.active{
+    display: block;
+}
+.menu-bar div{
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    height: 100%;
+}
+.menu-bar div a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.menu-bar div a:hover{
+    color: orange;
+}
+
+
+#contact{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../public/images/contact.jpg);
+}
+#contact form{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    border: 0.5px solid lightgray;
+    border-radius:20px;
+    width: 35%;
+    background-color: white;
+    gap: 2rem;
+    height: 35rem;
+    margin-right: 10%;
+}
+#contact h2{
+    font-size: 2rem;
+}
+#contact input{
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    padding:0.5rem 1rem;
+    font-size: 0.9rem;
+    color: gray;
+    font-weight: bolder;
+}
+#contact input:focus{
+    border-color: orange;
+    color: orange;
+}
+
+#contact button{
+    padding:0.6rem 2rem ;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 50%;
+    cursor: pointer;
+}
