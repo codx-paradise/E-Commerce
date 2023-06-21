@@ -1,7 +1,7 @@
 import React from 'react';
-import '../Pages/style.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import {ShoppingBag} from '@mui/icons-material';
 
 
 function Header (){
@@ -16,10 +16,13 @@ function Header (){
             <div className="menu" onClick={menuBar}>{<MenuIcon/>}</div>
             AK
         </div>
-        <div className="search">
+        <div>
+        <span className="search">
             <span>{<SearchIcon/>}</span>
             <input type="search" placeholder='Search' name="" id="" />
-        </div>
+        </span>
+            <span>{<ShoppingBag/>}</span>
+            </div>
     </div>
     <div className="menu-bar">
         <h4>Settings</h4>

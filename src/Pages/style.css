@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Header page*/
 #header{
     background: black;
     color: white;
@@ -11,6 +11,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.7rem 5rem;
+}
+#header .search{
+    position: relative;
 }
 #header .search input{
     padding: 0.7rem 2rem;
@@ -24,8 +27,8 @@
 }
 #header .search span{
     position: absolute;
-    right: 21.5%;
-    top: 3%;
+    left: 2%;
+    top: 20%;
 }
 #header .logo{
     display: flex;
@@ -36,6 +39,9 @@
 #header .menu{
     cursor: pointer;
 }
+
+
+/* Menu page*/
 .menu-bar{
     border: 1.5px solid lightgray;
     border-radius: 10px;
@@ -44,13 +50,14 @@
     margin: 1rem 0 0 1rem;
     padding: 2rem;
     display: none;
+    position: absolute;
+    background-color: white;
 }
 .active{
     display: block;
 }
 .menu-bar div{
     padding: 1rem;
-    background-color: white;
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
@@ -65,14 +72,78 @@
     color: orange;
 }
 
+/* Home page*/
+#home {
+    position: relative;
+}
+#home .image{
+    height: 35rem;
+    width: 100%;
+}
+#home .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+#home .content{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    text-align: justify;
+    color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+#home .content a{
+    padding: 0.7rem 2rem;
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    border-radius: 10px;
+    margin: 1rem;
+    font-weight: bold;
+}
 
+
+/* Footer page*/
+#footer{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background: black;
+    color: white;
+}
+#footer ul{
+    max-width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+#footer ul a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+}
+#footer ul a:hover{
+    color: orange;
+    transform:translateX(20%);
+}
+#footer ul li{
+    list-style:circle;
+}
+
+/* contact page*/
 #contact{
     display: flex;
     justify-content: end;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url(../../public/images/contact.jpg);
+    background-image: url(..//images/contact.jpg);
 }
 #contact form{
     padding: 2rem;

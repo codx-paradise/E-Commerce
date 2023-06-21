@@ -1,6 +1,5 @@
 import React from 'react';
 import  SendIcon from '@mui/icons-material/Send';
-import './style.css'
 
 const Contact = () => {
   return (
