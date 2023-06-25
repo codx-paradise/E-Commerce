@@ -1,3 +1,4 @@
+import { AddShoppingCart } from '@mui/icons-material'
 import React from 'react'
 
 const Card = () => {
@@ -9,12 +10,11 @@ const Card = () => {
             <img src="" alt="" />
         </div>
         <button className='wishlist' type="button">*</button>
-        <div className="rating">4*</div>
         </div>
         <div className="content">
             <h3>Lorem, ipsum dolor.</h3>
             <div className="price">$500</div>
-            <button type="button">Add Cart</button>
+            <button type="button" className='btn'>{<AddShoppingCart/>} Add Cart</button>
         </div>
     </div>
     </>

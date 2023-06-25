@@ -3,6 +3,7 @@ import React from 'react'
 const Category = () => {
   return (
     <>
+    <div className="category">
     <div className="item">
         <div className="image">
             <img src="" alt="" />
@@ -25,6 +26,12 @@ const Category = () => {
         <div className="image">
             <img src="" alt="" />
         </div>
+        <p>Books</p>
+    </div>
+    <div className="item">
+        <div className="image">
+            <img src="" alt="" />
+        </div>
         <p>Toys</p>
     </div>
     <div className="item">
@@ -32,6 +39,7 @@ const Category = () => {
             <img src="" alt="" />
         </div>
         <p>Tools</p>
+    </div>
     </div>
     </>
   )

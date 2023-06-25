@@ -1,3 +1,4 @@
+import { Delete,ViewArray, ViewCarousel, ViewComfy } from '@mui/icons-material'
 import React from 'react'
 
 const Item = () => {
@@ -13,8 +14,8 @@ const Item = () => {
             <button type="button">-</button>
         </div>
         <div className="btn-group">
-            <button className='btn' type="button">Delete</button>
-            <button className='btn' type="button">view</button>
+            <button className='btn' type="button">{<Delete/>}</button>
+            <button className='btn' type="button">{<ViewComfy/>}</button>
         </div>
     </div>
     </>

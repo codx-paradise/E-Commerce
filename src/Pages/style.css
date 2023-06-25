@@ -52,6 +52,7 @@
     display: none;
     position: absolute;
     background-color: white;
+    z-index: 500;
 }
 .active{
     display: block;
@@ -97,7 +98,8 @@
     gap: 1rem;
 }
 #home .content a{
-    padding: 0.7rem 2rem;
+    padding: 0.7rem 1rem;
+    width: fit-content;
     text-decoration: none;
     color: white;
     background-color: orange;
@@ -106,6 +108,31 @@
     font-weight: bold;
 }
 
+/* Category page*/
+.category{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+.category .item{
+    font-size: 14px;
+    color: black;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: bold;
+}
+.category .image{
+    width: 50px;
+    height: 50px;
+}
+.category img{
+    width: 100%;
+    object-fit: cover;
+}
 
 /* Footer page*/
 #footer{

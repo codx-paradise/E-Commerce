@@ -1,0 +1,122 @@
+.card{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0.9rem;
+    position: relative;
+    width: 17rem;
+    height: 20rem;
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.card .card-header{
+    width: 100%;
+    height: 15rem;
+}
+.card .wishlist{
+    outline:none;
+    border: none;
+    background: #fff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border: 1px solid blue;
+    text-align: center;
+}
+.btn{
+    border: none;
+    outline: none;
+    background: rgba(255, 166, 0, 0.623);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+.btn:hover{
+    background: orange;
+    color: #fff;
+}
+.card .price{
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+.card h3{
+    font-weight:500;
+}
+
+
+.cart-item{
+    width: 70%;
+    height: 10rem;
+    overflow: hidden;
+    display: flex;
+    gap: 1rem;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(112, 111, 111, 0.205);
+    margin-bottom: 1rem;
+}
+.cart-item .image{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+.cart-item .process button{
+    font-size: 25px;
+    font-weight: bold;
+    border: 2px solid gray;
+    padding:0.7rem 1.2rem;
+    outline: none;
+    background: transparent;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.process input{
+    background-color: transparent;
+    color: black;
+    border: none;
+    outline: none;
+    width: 50px;
+    padding: 0.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+.btn-group{
+    display: flex;
+    gap: 1rem;
+}
+.cart-item .btn-group button{
+    background-color: transparent;
+    color: black;
+}
+.cart .btn-group-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding: 0 1rem;
+}
+.cart .btn-group-2 button{
+    width: 30%;
+    font-size: 16px;
+    font-weight: bold;
+}
+.cart{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
