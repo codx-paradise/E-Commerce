@@ -1,25 +1,27 @@
 import React from 'react'
+import { AnimationRounded, ArrowBack, DateRange, DeliveryDining, LocalOffer } from '@mui/icons-material'
+import { Rating } from '@mui/material'
 
 const Product = () => {
   return (
     <>
+    <a href='#' className="back-btn">{<ArrowBack/>}Back</a>
+    <div id="product">
     <div className="product-header">
         <div className="image">
             <img src="" alt="" />
         </div>
-        <button className='wishlist' type="button">*</button>
-        <button className='share' type="button">*</button>
     </div>
     <div className="product-body">
         <h3>Lorem ipsum dolor sit amet.</h3>
-        <div className="rating">****</div>
+        <div className="rating">{<Rating/>}</div>
         <a href="#">Offer</a>
         <div className="price">$500</div>
     </div>
     <div className="product-available">
-        <div className="delivery-date">*</div>
-        <div className="offer">Lorem, ipsum dolor.</div>
-        <div className="return">Lorem, ipsum dolor.</div>
+        <div className="delivery-date">{<DateRange/>}</div>
+        <div className="offer">{<LocalOffer/>} Lorem, ipsum dolor.</div>
+        <div className="return">{<DeliveryDining/>} Lorem, ipsum dolor.</div>
     </div>
     <div className="product-detail">
         <table>
@@ -36,7 +38,7 @@ const Product = () => {
             </tr>
             <tr>
                 <td>Display</td>
-                <td>Fulll Screen</td>
+                <td>Full Screen</td>
             </tr>
         </table>
     </div>
@@ -57,13 +59,14 @@ const Product = () => {
         </div>
     </div>
     <div className="product-comments">
-        <div className="rating">* <span>Lorem, ipsum dolor.</span></div>
+        <div className="rating">4 {<Rating/>} <span>Lorem, ipsum dolor.</span></div>
         <div className="comment">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
         <div className="comment-date">2 months</div>
     </div>
     <div className="cart">
         <button className='btn' type="button">Add Cart</button>
         <button className='btn' type="button">Buy Now</button>
+    </div>
     </div>
     </>
   )

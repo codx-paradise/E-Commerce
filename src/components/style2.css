@@ -41,7 +41,16 @@
     color: white;
     cursor: pointer;
 }
-
+.back-btn{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 18px;
+    padding: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
 
 
 .cart-item{
@@ -111,4 +120,19 @@
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+
+
+#product{
+    padding: 1rem;
+}
+#product .product-header .image{
+    width: 50%;
+    height: 20rem;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+#product .product-body{
+    padding: 1rem;
 }
